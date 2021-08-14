@@ -1,0 +1,182 @@
+/*Importando font local*/
+@font-face{
+    font-family: "Amaranth";
+    src: url("../font/Amaranth-Italic.ttf");
+}
+
+@font-face{
+    font-family: "Ubuntu Condensed";
+    src: url("../font/UbuntuCondensed-Regular.ttf");
+}
+
+/*Estilos*/
+*{
+    margin: 0;
+    padding: 0;
+}
+/*
+video{
+    position: fixed;
+    top: 50%;
+    left: 50%;
+    z-index: -100;
+    min-width: 100%;
+    min-height: 100%;
+    width: auto;
+    height: auto;
+    transform: translate(-50%,-50%);
+}*/
+
+.fondo{
+    background-image: url('../src/Fondo.png');
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-position: center center;
+    width: 100%;
+    height: 100vh;
+    position: fixed;
+    z-index: -100;
+}
+
+.contenedor{
+    width: 100%;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.contenedor .formContenedor{
+    background: rgba(17, 17, 17, 0.589);
+    width: 300px;
+    height: 400px;
+    border-radius: 20px;
+    /*border: 3px solid rgb(0, 4, 255);*/
+}
+
+.contenedor .formContenedor .logoContenedor{
+    text-align: center;
+    display: grid;
+    justify-content: center;
+}
+
+.contenedor .formContenedor .logoContenedor .titulo{
+    /*width: 105px;
+    height: 105px;
+    background: rgb(255,255,255);
+    border-radius: 50%;
+    display: flex;*/
+    justify-content: center;
+    align-items: center;
+    margin-top: -45px;
+    transition: 100ms;
+}
+
+contenedor .formContenedor{
+    box-shadow: 0 1px 10px red;
+}
+
+.contenedor .formContenedor .logoContenedor .logo img{
+    width: 220px;
+    height: 120px;
+}
+
+.contenedor .formContenedor .titulo{
+    margin-top: 5px;
+    text-align: center;
+    margin-bottom: 3px;
+}
+
+.contenedor .formContenedor .titulo h1{
+    color: rgb(255, 255, 255);
+    font-family: "Amaranth";
+}
+
+.contenedor .formContenedor .groupForm {
+    width: 80%;
+    margin: auto;
+    margin-bottom: 8px;
+}
+
+.contenedor .formContenedor .groupForm .icono{
+    color: rgb(21, 224, 14);
+    position: absolute;
+    margin-top: 5px;
+    margin-left: 5px;
+}
+
+.contenedor .formContenedor .groupForm label{
+    color: white;
+    font-family: "Ubuntu Condensed";
+}
+
+.contenedor .formContenedor .groupForm input[type='text'],input[type='password']{
+    width: 100%;
+    height: 25px;
+    border: none;
+    outline: none;
+    border-radius: 5px;
+    box-sizing: border-box;
+    padding-left: 25px;
+    background: rgba(41, 49, 37, 0.596);
+    color: rgb(186, 194, 196);
+}
+
+.contenedor .formContenedor .opciones,
+.contenedor .formContenedor .buttonSubmit{
+    width: 90%;
+    margin: auto;
+}
+
+.contenedor .formContenedor .buttonSubmit{
+    display: flex;
+    justify-content: center;
+    margin-bottom: 13px;
+}
+
+.contenedor .formContenedor .buttonSubmit input[type='submit']{
+    height: 28px;
+    width: 150px;
+    margin-top: 8px;
+    border-radius: 7px;
+    border: none;
+    background: rgb(9, 179, 9);
+    color: white;
+    font-size: 10pt;
+    transition: 100ms;
+}
+
+.contenedor .formContenedor .buttonSubmit input[type='submit']:hover{
+    background: rgb(23, 255, 2);
+    box-shadow: 0 1px 6px rgb(2, 73, 12);
+    color: white;
+}
+
+.contenedor .formContenedor .opciones{
+    text-align: center;
+    margin: auto;
+}
+
+
+.contenedor .formContenedor .opciones p a{
+    text-decoration: none;
+}
+
+.contenedor .formContenedor .opciones p:first-child a{
+    color: rgb(51, 250, 25);
+    font-family: "Ubuntu Condensed";
+    line-height: 2;
+}
+
+.contenedor .formContenedor .opciones p:first-child a:hover{
+    text-shadow: 0 1px 6px rgb(0, 26, 255);
+}
+
+.contenedor .formContenedor .opciones p:last-child a{
+    color: rgb(51, 250, 25);
+    font-family: "Ubuntu Condensed";
+}
+
+.contenedor .formContenedor .opciones p:last-child a:hover{
+    text-shadow: 0 1px 6px rgb(0, 26, 255);
+}
