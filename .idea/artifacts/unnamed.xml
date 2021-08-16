@@ -11,6 +11,7 @@
           <element id="library" level="project" name="Maven: com.sun.faces:jsf-impl:2.2.20" />
         </element>
       </element>
+      <element id="javaee-facet-resources" facet="sistemadecorreosmasivosweb/web/Web" />
     </root>
   </artifact>
 </component>
