@@ -1,74 +1,68 @@
-<!DOCTYPE html>
-<html lang="en"
-      xmlns="http://www.w3.org/1999/xhtml"
-      xmlns:ui="http://xmlns.jcp.org/jsf/facelets"
-      xmlns:h="http://xmlns.jcp.org/jsf/html"
-      xmlns:f="http://xmlns.jcp.org/jsf/core">
-<head>
+<?xml version="1.0" encoding="UTF-8"?>
+<web-app xmlns="http://java.sun.com/xml/ns/javaee" 
+        xmlns:f="http://java.sun.com/jsf/core"
+        xmlns:h="http://java.sun.com/jsf/html"> 
+<html lang="en">
+<h:head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="./css/estilo.css">
     <script src="./src/icono.js"></script>
     <title>EnvioCorreos-Login</title>
-</head>
-<body>
-    <!--
-    <div class="videoFondo">
-        <video src="./src/FondoLoginUpv.mp4" autoplay muted="muted" loop></video>
-    </div>-->
-    
-    <div class="fondo">
-    </div>
+</h:head>
+<h:body>
+    <form action="login.jsp" method=get>
+        <div class="fondo">
+        </div>
 
-    <div class="mydiv animate-bg">
-    </div>
+        <div class="mydiv animate-bg">
+        </div>
 
-    <div class="contenedor">
+        <div class="contenedor">
 
-        <div class="formContenedor">
-            <div class="logoContenedor">
-                <div class="logo">
-                    <img src="./src/logo.png" alt="">
-                </div>
-            </div>
-
-            <div class="titulo">
-                <h1>Iniciar Sesion</h1>
-            </div>
-
-            <form action="#">
-                <div class="groupForm">
-                    <div class="label">
-                        <label for="Usuario">Correo Institucional</label>
-                    </div>
-                    <div>
-                        <i class="icono usuario fas fa-user"></i>
-                        <input type="text" placeholder="Ingrese su correo Institucional" id="cajaDeCorreo">
+            <div class="formContenedor">
+                <div class="logoContenedor">
+                    <div class="logo">
+                        <img src="./src/logo.png" alt="">
                     </div>
                 </div>
 
-                <div class="groupForm">
-                    <div class="label">
-                        <label for="contraseña">Contraseña</label>
+                <div class="titulo">
+                    <h1>Iniciar Sesion</h1>
+                </div>
+
+                <h:form action="#">
+                    <div class="groupForm">
+                        <div class="label">
+                            <label for="Usuario">Correo Institucional</label>
+                        </div>
+                        <div>
+                            <i class="icono usuario fas fa-user"></i>
+                            <input type="text" placeholder="Ingrese su correo Institucional" name ="correo">
+                        </div>
                     </div>
-                    <div>
-                        <i class="icono usuario fas fa-key"></i>
-                        <input type="password" placeholder="Ingrese su Contraseña" id="cajaDeContraseña">
+
+                    <div class="groupForm">
+                        <div class="label">
+                            <label for="contraseña">Contraseña</label>
+                        </div>
+                        <div>
+                            <i class="icono usuario fas fa-key"></i>
+                            <input type="password" placeholder="Ingrese su Contraseña" name = "pass" id= "mPass">
+                        </div>
                     </div>
-                </div>
 
-                <div class="buttonSubmit" >
-                    <input type="submit" value="Ingresar" id="botonIngresar"/>
+                    <div class="buttonSubmit">
+                        <input type="submit" value="Ingresar" name = "paginaSig" >
+                    </div>
 
-                </div>
+                    <div class="opciones">
+                        <p><a href="recuContra.html">Olvide mi contraseña</a></p>
+                    </div>
+        </form>    
 
-                <div class="opciones">
-                    <p><a href="recuperarContraseña.html">Olvide mi contraseña</a></p>
-                </div>
-
-            </form>
         </div>
     </div>
 
-</body>
+</h:body>
 </html>

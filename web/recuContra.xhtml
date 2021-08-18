@@ -1,0 +1,62 @@
+<!DOCTYPE web-app PUBLIC
+ "-//Sun Microsystems, Inc.//DTD Web Application 2.3//EN"
+ "http://java.sun.com/dtd/web-app_2_3.dtd" >
+<?xml version="1.0" encoding="UTF-8"?>
+<web-app xmlns="http://java.sun.com/xml/ns/javaee" 
+        xmlns:f="http://java.sun.com/jsf/core"
+        xmlns:h="http://java.sun.com/jsf/html"> <!-- Aquí se agrega el soporte de jsf para html -->
+    
+<html lang="en">
+<h:head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./css/estiloRecuContra.css">
+    <script src="./src/icono.js"></script>
+    <title>Recuperación Contraseña-Login</title>
+</h:head>
+<h:body>
+    
+    <div class="fondo">
+    </div>
+
+    <div class="mydiv animate-bg">
+    </div>
+
+    <div class="contenedor">
+
+        <div class="formContenedor">
+            <div class="logoContenedor">
+                <div class="logo">
+                    <img src="./src/logo.png" alt="">
+                </div>
+            </div>
+
+            <div class="titulo">
+                <h1>Recuperación</h1>
+            </div>
+
+            <form action="#">
+                <div class="groupForm">
+                    <div class="label">
+                        <label for="Usuario">Correo Institucional</label>
+                    </div>
+                    <div>
+                        <i class="icono usuario fas fa-user"></i>
+                        <input type="text" placeholder="correo institucional">
+                    </div>
+                </div>
+
+                <div class="buttonSubmit">
+                    <input type="submit" value="Recuperar Contraseña">
+                </div>
+
+                <div class="opciones">
+                    <p><a href="index.html">Iniciar Sesion</a></p>
+                </div>
+
+            </form>
+        </div>
+    </div>
+
+</h:body>
+</html>

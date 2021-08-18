@@ -10,6 +10,9 @@
           <element id="library" level="project" name="sqlite-jdbc-3.34.0" />
           <element id="library" level="project" name="Maven: com.sun.faces:jsf-api:2.2.20" />
           <element id="library" level="project" name="Maven: com.sun.faces:jsf-impl:2.2.20" />
+          <element id="library" level="project" name="Maven: javax.inject:javax.inject:1" />
+          <element id="library" level="project" name="Maven: org.apache.taglibs:taglibs-standard-impl:1.2.5" />
+          <element id="library" level="project" name="Maven: javax.el:javax.el-api:3.0.0" />
         </element>
       </element>
       <element id="javaee-facet-resources" facet="sistemadecorreosmasivosweb/web/Web" />
