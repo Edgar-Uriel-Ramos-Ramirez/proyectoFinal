@@ -25,9 +25,4 @@ public class pruebabean {
     public void setSaludo(String saludo) {
         this.saludo = saludo;
     }
-
-    public void saludar()
-    {
-        this.saludo = "Hola " + nombre;
-    }
 }
